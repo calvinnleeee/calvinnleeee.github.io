@@ -1,6 +1,34 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
+/*
+Example:
+<PageLayout>
+  <NavigationHeader>
+    <SearchBar />
+    <Link to="/docs">Docs</Link>
+  </NavigationHeader>
+  <Sidebar />
+  <PageContent>
+    <TableOfContents />
+    <DocumentationText />
+  </PageContent>
+</PageLayout>
+
+Order: About me (include education), skills, projects, experience, links
+
+<Main>
+  <Navigation/>  <- 5 links
+  <About me/>
+  <Skills/>
+  <Projects/>
+  <Experience/>
+  <Links/>
+</Main>
+*/
+
+// Import my own styles instead of ones above?
+
 export default function Home() {
   return (
     <main className={styles.main}>
