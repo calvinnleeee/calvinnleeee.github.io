@@ -7,6 +7,22 @@
   min-height: 100vh;
 }
 
+.nav {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+}
+
+.content {
+  width: 1280px;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-image: url("/img/background.jpg");
+  padding-bottom: 3rem;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
