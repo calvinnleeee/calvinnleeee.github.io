@@ -1,7 +1,9 @@
-import Image from 'next/image'
-import Navigation from './../components/Navigation.js'
-import About from './../components/About.js'
-import styles from './page.module.css'
+import Image from 'next/image';
+import Navigation from './../components/Navigation.js';
+import About from './../components/About.js';
+import Skills from './../components/Skills.js';
+import Links from './../components/Links.js';
+import styles from './page.module.css';
 
 /*
 Example:
@@ -40,7 +42,16 @@ export default function Home() {
 
       <div className={styles.content}>
         <About />
+        <Skills />
+        {/* <Projects/>
+        <Experience/> */}
+        <Links/>
+
+        <br /><br /><br /><br />
+        <h1 className={styles.h1}>Website is still a work in progress!<br />Mobile version coming later!</h1>
+        <br />
       </div>
+
 
       {/* <div className={styles.description}>
         <p>

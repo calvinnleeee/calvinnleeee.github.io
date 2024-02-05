@@ -14,7 +14,7 @@ export default function About() {
                         height="640px"
                         playing={true}
                         controls={false}
-                        url="video/dance1.mp4" />
+                        url="video/dance2.mp4" />
         </div>
         
         {/* This is me, also me section. */}
@@ -38,14 +38,23 @@ export default function About() {
 
           {/* Profile, current and past experiences */}
           <div className={styles.about_text}>
-            <p><span className={styles.text_bold}>Currently: </span><br />
-            Searching for co-operative work experience &#40;Let me know if you've got one!&#41;.<br />
-            Working on this website, learning and gaining experience with Next and React. <br />
-            Computer Systems Technology diploma, second-time student at BCIT.<br />
+            <p>
+            <span className={styles.text_bold}>A little about me: </span><br />
+            High-level rhythm dance game player (In The Groove, Pump It Up), playing since 2018.<br />
+            Member of the rhythm game community and Discord since its creation in 2019.<br />
+            I speak three languages: English, Cantonese, Korean (&lt;- self-learned, I'm not Korean!).<br />
             <br /><br />
+            
+            <span className={styles.text_bold}>Currently: </span><br />
+            Searching for co-operative work experience &#40;Let me know if you've got one!&#41;.<br />
+            Working on this website, learning and gaining experience with Next and React.<br />
+            Computer Systems Technology diploma program, second-time student at BCIT.<br />
+            <br /><br />
+
             <span className={styles.text_bold}>Previously:</span><br />
-            Department Manager at <a href="" target="_blank">Assi Market</a>.<br />
-            Four years of studies in Electrical Engineering, Bachelor's program at BCIT.<br />
+            Department Manager at <a className={styles.link_text} href="https://assimarket.ca/" target="_blank">Assi Market</a>.<br />
+            Four years of undergraduate studies in Electrical Engineering, Bachelor's program at BCIT.<br />
+            <br /><br />
             </p>
           </div>
         </div>

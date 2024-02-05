@@ -1,23 +1,16 @@
-import styles from './Navigation.module.css'
+'use client'
+import styles from './Navigation.module.css';
+import page from './../app/page.js';
 
-function NavButton({txt}) {
-  return (
-  <>
-    <div className={styles.nav_button}>
-      <p className={styles.nav_text}>{txt}</p>
-    </div>
-  </>
-  )
-}
+function NavButton(props) {
 
-export default function Navigation() {
-
-  function handleClick(whichButton) {
-    // check which button was clicked, move the window to that section
-    // use Window.scrollTo() or Window.scroll()?
-    switch(whichButton) {
+  function handleClick(btn) {
+    switch(btn) {
       case 1:
-        // move focus to about me
+        // move focus to top
+        {window.scrollTo({
+          top: 0, behavior: "smooth"
+        })};
         break;
       case 2:
         // move focus to skills
@@ -37,12 +30,23 @@ export default function Navigation() {
 
   return (
   <>
+    <div className={styles.nav_button} onClick={() => handleClick(props.val)}>
+      <p className={styles.nav_text}>{props.txt}</p>
+    </div>
+  </>
+  )
+}
+
+export default function Navigation() {
+
+  return (
+  <>
     <div className={styles.nav_container}>
-      <NavButton txt={"About Me"} onClick={handleClick(1)}/>
-      <NavButton txt={"Skills"} onClick={handleClick(2)}/>
-      <NavButton txt={"Projects"} onClick={handleClick(3)}/>
-      <NavButton txt={"Experience"} onClick={handleClick(4)}/>
-      <NavButton txt={"Documents"} onClick={handleClick(5)}/>
+      <NavButton txt={"About Me"} val={1}/>
+      <NavButton txt={"Skills"} val={2}/>
+      <NavButton txt={"Projects"} val={3}/>
+      <NavButton txt={"Experiences"} val={4}/>
+      <NavButton txt={"Documents"} val={5}/>
     </div>
   </>
   )

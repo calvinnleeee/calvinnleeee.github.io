@@ -7,6 +7,11 @@
   min-height: 100vh;
 }
 
+.h1 {
+  text-align: center;
+  font-size: 32pt;
+}
+
 .nav {
   position: fixed;
   z-index: 2;
@@ -14,7 +19,7 @@
 }
 
 .content {
-  width: 1280px;
+  width: 100%;
   height: fit-content;
   position: absolute;
   top: 0;

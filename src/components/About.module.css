@@ -1,13 +1,13 @@
 .about_container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
 }
 
 .video_container {
-  padding-top: 15%;
-  width: 60%;
-  margin: 0% auto;
+  padding-top: 140px;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 /* .me_container {
@@ -16,9 +16,10 @@
 
 .me_text {
   font-size: 28pt;
-  margin-top: 3%;
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -29,10 +30,16 @@
 
 .about_text {
   text-align: left;
+  font-size: 14pt;
   width: max-content;
   margin: 0 auto;
+  line-height: 1.35;
 }
 
 .text_bold {
   font-weight: bold;
+}
+
+.link_text:hover {
+  color: purple;
 }
