@@ -6,11 +6,11 @@ Small project to make my own website, while learning about and using Next.js and
 
 ## Current Progress
 
-About me    (=========-)
-Skills      (=========-)
-Projects    (----------)
-Experiences (----------)
-Links       (====------)
+* About me    (=========-)
+* Skills      (=========-)
+* Projects    (----------)
+* Experiences (----------)
+* Links       (====------)
 
 
 ## Current thoughts and other ideas
