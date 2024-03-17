@@ -1,6 +1,7 @@
 'use client'
 import styles from './Navigation.module.css';
 import page from './../app/page.js';
+import {useRef} from 'react';
 
 function NavButton(props) {
 
@@ -8,12 +9,14 @@ function NavButton(props) {
     switch(btn) {
       case 1:
         // move focus to top
-        {window.scrollTo({
-          top: 0, behavior: "smooth"
-        })};
+        // {window.scrollTo({
+        //   top: 0, behavior: "smooth"
+        // })};
+        scrollToRef.current.scrollIntoView();
         break;
       case 2:
         // move focus to skills
+        // document.getElementById("skills").scrollIntoView();
         break;
       case 3:
         // move focus to projects
@@ -38,11 +41,12 @@ function NavButton(props) {
 }
 
 export default function Navigation() {
+  const scrollToRef = useRef(null);
 
   return (
   <>
-    <div className={styles.nav_container}>
-      <NavButton txt={"About Me"} val={1}/>
+    <div className={styles.nav_container} ref={scrollToRef}>
+      <NavButton txt={"About Me"} val={1} />
       <NavButton txt={"Skills"} val={2}/>
       <NavButton txt={"Projects"} val={3}/>
       <NavButton txt={"Experiences"} val={4}/>

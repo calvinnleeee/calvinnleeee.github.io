@@ -12,10 +12,35 @@
   font-size: 32pt;
 }
 
-.nav {
+.nav_container {
   position: fixed;
   z-index: 2;
   top: 0;
+  width: 1000px;
+  height: 100px;
+  border-radius: 50px;
+  border: 3px, solid, white;
+  background-color: rgb(177, 208, 209);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav_button {
+  display: block;
+  width: 100px;
+  height: 80%;
+  margin: auto;
+}
+
+.nav_button:hover {
+  cursor: pointer;
+}
+
+.nav_text { /* maybe add shadow or blur or smth later? or keep it simple? */
+  font-size: 16pt;
+  color: rgb(39, 36, 54);
+  text-align: center;
+  padding: 27% 0;
 }
 
 .content {
@@ -26,6 +51,7 @@
   z-index: -1;
   background-image: url("/img/background.jpg");
   padding-bottom: 3rem;
+  color: black;
 }
 
 .description {

@@ -1,26 +1,13 @@
-import Image from 'next/image';
-import Navigation from './../components/Navigation.js';
+'use client'
+// import Image from 'next/image';
+// import Navigation from './../components/Navigation.js';
 import About from './../components/About.js';
 import Skills from './../components/Skills.js';
 import Links from './../components/Links.js';
 import styles from './page.module.css';
+import {useRef, useEffect} from 'react';
 
 /*
-Example:
-<PageLayout>
-  <NavigationHeader>
-    <SearchBar />
-    <Link to="/docs">Docs</Link>
-  </NavigationHeader>
-  <Sidebar />
-  <PageContent>
-    <TableOfContents />
-    <DocumentationText />
-  </PageContent>
-</PageLayout>
-
-Order: About me (include education), skills, projects, experience, links
-
 <Main>
   <Navigation/>  <- 5 links
   <About me/>
@@ -34,18 +21,82 @@ Order: About me (include education), skills, projects, experience, links
 // Import my own styles instead of ones above?
 
 export default function Home() {
+  const home = useRef(null);
+  const skills = useRef(null);
+  const links = useRef(null);
+
+  function NavButton(props) {
+    
+    function handleClick(btn) {
+        switch(btn) {
+          case 1:
+            // move focus to top
+            window.scrollTo({top: 0, behavior: "smooth"});
+            break;
+          case 2:
+            // move focus to skills
+            skills.current.scrollIntoView({
+              block: "center",
+              behavior: "smooth"});
+            break;
+          case 3:
+            // move focus to projects
+            // projects.current.scrollIntoView({
+            //   block: "start",
+            //   behavior: "smooth"});
+            break;
+            break;
+          case 4:
+            // move focus to experience
+            // experience.current.scrollIntoView({
+            //   block: "start",
+            //   behavior: "smooth"});
+            break;
+            break;
+          case 5:
+            // move focus to documents/links
+            links.current.scrollIntoView({
+              block: "start",
+              behavior: "smooth"});
+            break;
+            break;
+          default:
+        }
+    }
+
+    return (
+    <>
+      <div className={styles.nav_button} onClick={() => handleClick(props.val)}>
+        <p className={styles.nav_text}>{props.txt}</p>
+      </div>
+    </>
+    )
+  }
+  
   return (
     <main className={styles.main}>
-      <div className={styles.nav}>
-        <Navigation />
+      <div className={styles.nav_container}>
+        <NavButton txt={"About Me"} val={1} />
+        <NavButton txt={"Skills"} val={2}/>
+        <NavButton txt={"Projects"} val={3}/>
+        <NavButton txt={"Experiences"} val={4}/>
+        <NavButton txt={"Links"} val={5}/>
       </div>
 
-      <div className={styles.content}>
-        <About />
-        <Skills />
+      <div className={styles.content} ref={home}>
+        <div>
+          <About id="about" />
+        </div>
+        <div ref={skills}>
+          <Skills id="skills" />
+        </div>
+        
         {/* <Projects/>
         <Experience/> */}
-        <Links/>
+        <div ref={links}>
+          <Links id="links" />
+        </div>
+        
 
         <br /><br /><br /><br />
         <h1 className={styles.h1}>Website is still a work in progress!<br />Mobile version coming later!</h1>
@@ -53,92 +104,7 @@ export default function Home() {
       </div>
 
 
-      {/* <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div> */}
-
-      {/* <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div> */}
-
-      {/* <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div> */}
+      
     </main>
   )
 }

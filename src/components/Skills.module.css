@@ -4,7 +4,7 @@
   font-family: 'Montserrat', sans-serif;
 
   display: grid;
-  grid-template-columns: 30% 20% 20% 30%;
+  grid-template-columns: 15% 35% 35% 15%;
 }
 
 .hard_container {
@@ -25,14 +25,15 @@
 }
 
 .ul {
-  font-size: 16pt;
+  font-size: 20pt;
   font-weight: bold;
+  line-height: 2;
 }
 
 .skills_hard {
-  
+  font-size: 14pt;
 }
 
 .skills_soft {
-  
+  font-size: 14pt;
 }
