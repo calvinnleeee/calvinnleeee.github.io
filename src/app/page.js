@@ -5,6 +5,7 @@ import About from './../components/About.js';
 import Skills from './../components/Skills.js';
 import Links from './../components/Links.js';
 import styles from './page.module.css';
+import ReactPlayer from 'react-player';
 import {useRef, useEffect} from 'react';
 
 /*
@@ -24,6 +25,9 @@ export default function Home() {
   const home = useRef(null);
   const skills = useRef(null);
   const links = useRef(null);
+  const exp = useRef(null);
+
+  var btnCount = 1;
 
   function NavButton(props) {
     
@@ -42,14 +46,14 @@ export default function Home() {
           case 3:
             // move focus to projects
             // projects.current.scrollIntoView({
-            //   block: "start",
+            //   block: "center",
             //   behavior: "smooth"});
             break;
             break;
           case 4:
             // move focus to experience
-            // experience.current.scrollIntoView({
-            //   block: "start",
+            // exp.current.scrollIntoView({
+            //   block: "center",
             //   behavior: "smooth"});
             break;
             break;
@@ -76,14 +80,32 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.nav_container}>
-        <NavButton txt={"About Me"} val={1} />
-        <NavButton txt={"Skills"} val={2}/>
-        <NavButton txt={"Projects"} val={3}/>
-        <NavButton txt={"Experiences"} val={4}/>
-        <NavButton txt={"Links"} val={5}/>
+        <div className={styles.nav_name}>
+          <span className={styles.nav_me}>&#123;calvin.lee&#125;</span>
+        </div>
+
+        <div className={styles.nav_buttons}>
+          <NavButton txt={"About Me"} val={btnCount++} />
+          <NavButton txt={"Skills"} val={btnCount++}/>
+          <NavButton txt={"Projects"} val={btnCount++}/>
+          <NavButton txt={"Experiences"} val={btnCount++}/>
+          <NavButton txt={"Links"} val={btnCount++}/>
+        </div>
       </div>
 
       <div className={styles.content} ref={home}>
+
+        <div className={styles.video_container}>
+          {/* <video src="dance1.mp4" /> */}
+          <ReactPlayer  muted={true}
+                        loop={true}
+                        width="640px"
+                        height="640px"
+                        playing={true}
+                        controls={false}
+                        url="video/dance2.mp4" />
+        </div>
+
         <div>
           <About id="about" />
         </div>

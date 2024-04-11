@@ -4,12 +4,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.video_container {
-  padding-top: 140px;
-  width: fit-content;
-  margin: 0 auto;
-}
-
 /* .me_container {
   
 } */
@@ -33,7 +27,7 @@
   font-size: 16pt;
   width: max-content;
   margin: 0 auto;
-  line-height: 1.35;
+  line-height: 1.40;
 }
 
 .text_bold {
