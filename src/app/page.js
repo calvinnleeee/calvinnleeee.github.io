@@ -35,7 +35,9 @@ export default function Home() {
         switch(btn) {
           case 1:
             // move focus to top
-            window.scrollTo({top: 0, behavior: "smooth"});
+            home.current.scrollIntoView({
+              block: "start",
+              behavior: "smooth"});
             break;
           case 2:
             // move focus to skills
@@ -93,9 +95,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.content} ref={home}>
+      <div className={styles.content}>
 
-        <div className={styles.video_container}>
+        <div className={styles.video_container} ref={home}>
           {/* <video src="dance1.mp4" /> */}
           <ReactPlayer  muted={true}
                         loop={true}

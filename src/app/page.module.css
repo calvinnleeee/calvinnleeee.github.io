@@ -18,7 +18,7 @@
   top: 0;
   width: 100%;
   height: 150px;
-  border: 3px, solid, white;
+  /* border: 3px, solid, white; */
   /* background-color: rgb(177, 208, 209); */
   /* background-image: linear-gradient(to bottom, rgba(17, 70, 131, 1) 40%, rgba(177, 208, 209, 0)); */
   background-image: linear-gradient(to bottom, rgba(79, 95, 112, 1) 50%, 91%, rgba(17, 70, 131, 0));
@@ -26,9 +26,10 @@
   grid-template-columns: 35% 65%;
 }
 .nav_name {
+  display: flex;
   grid-column: 1;
-  margin-top: 10%;
-  padding-left: 100px;
+  align-items: center;
+  padding-left: 20%;
 }
 
 .nav_me {
