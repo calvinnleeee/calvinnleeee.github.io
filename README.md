@@ -1,22 +1,21 @@
 
 ## Calvin Lee
 
-Currently: Project to make my own website, while learning about and using Next.js and React to gain skills in industry-relevant libraries and modules. Hopefully this website and my Github can showcase a little bit of how I code to others. :)
-
 Little bit about me: dance game player, student, programmer. Problem solving is fun, so is moving my feet around very fast.
+calvinnleeee.vercel.app
 
-## Current Progress
+Currently: 
+* BCIT CST diploma student, previous undergrad studies in electrical engineering
+* Learning React and Lua to design my own website and tinker around with small games, respectively
+* Looking for new friends to do some interesting projects with c:
+
+## Progress / Things to do
 ```
-* About me    (=========-)
-* Skills      (=========-)
-* Projects    (----------)
-* Experiences (----------)
-* Links       (====------)
+* Lua: learning syntax, programming simple games, porting over previous assignments into Lua for fun
+* React: simple website base made, slowly extracting and reformatting to make reusable code.
+* HTML/CSS: aiming to learn more CSS tricks to prettify my website
 ```
 
-## Current thoughts and other ideas
-
-* update projects section to include pictures and snippets of code
-* highlight interesting assignments as well?
-* single-column display for mobile
-* yadayadayada
+* start more interesting projects and highlight them here
+* update website for mobile viewing
+* practice C++/Python/Lua, learn to script
