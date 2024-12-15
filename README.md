@@ -1,21 +1,27 @@
 
 ## Calvin Lee
 
-Little bit about me: dance game player, student, programmer. Problem solving is fun, so is moving my feet around very fast.
-calvinnleeee.vercel.app
+Little bit about me: dance game player, student, programmer. I love problem solving: programming, gaming, social interactions, anything can be turned into a problem and solved :)
 
 Currently: 
-* BCIT CST diploma student, previous undergrad studies in electrical engineering
-* Learning React and Lua to design my own website and tinker around with small games, respectively
-* Looking for new friends to do some interesting projects with c:
+* BCIT CST diploma student, graduating May 2025. Previous undergrad studies in electrical engineering.
+* (Finally) updating this website and doing something with it
+* Thinking of doing an AWS certificate or a Google certificate (or maybe both?)
+* Looking for a job to use my programming, problem-solving, and/or leadership and team management skills!
 
-## Progress / Things to do
-```
-* Lua: learning syntax, programming simple games, porting over previous assignments into Lua for fun
-* React: simple website base made, slowly extracting and reformatting to make reusable code.
-* HTML/CSS: aiming to learn more CSS tricks to prettify my website
-```
 
-* start more interesting projects and highlight them here
-* update website for mobile viewing
-* practice C++/Python/Lua, learn to script
+## Languages learned (in order of most recently used)
+* Python
+* Kotlin
+* OCaml
+* Java
+* C
+
+## Previously learned languages (need some refreshing)
+* HTML/CSS
+* Javascript
+* C++
+
+## Interested in learning these languages
+* Lua
+* C#
