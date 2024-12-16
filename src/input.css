@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.my-content {
+  width: 850px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cloudy-bg {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2) 10%, transparent 40%), 
+                    radial-gradient(rgba(255, 255, 255, 0.1) 20%, transparent 60%);
+  background-size: 300px 300px, 500px 500px;
+  background-blend-mode: overlay;
+}
