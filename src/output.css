@@ -554,9 +554,50 @@ video {
   display: none;
 }
 
-.bg-gray-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
+.container {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.bg-gray-500\/80 {
+  background-color: rgb(107 114 128 / 0.8);
 }
 
 .object-center {
@@ -564,9 +605,22 @@ video {
      object-position: center;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.backdrop-blur-md {
+  --tw-backdrop-blur: blur(12px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.mont {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .my-content {
@@ -580,8 +634,22 @@ video {
 }
 
 .cloudy-bg {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.2) 10%, transparent 40%), 
-                    radial-gradient(rgba(255, 255, 255, 0.1) 20%, transparent 60%);
-  background-size: 300px 300px, 500px 500px;
-  background-blend-mode: overlay;
+  background-image: url('./img/66.png');
+  background-origin: border-box;
+  background-repeat: repeat;
+  background-size: contain;
+  background-position-x: right;
+  /* background-blend-mode: multiply; */
+  background-size: 100%;
+  /* background-blend-mode: overlay; */
+}
+
+.navbar {
+  height: 300px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark\:bg-gray-800\/90 {
+    background-color: rgb(31 41 55 / 0.9);
+  }
 }
