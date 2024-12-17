@@ -30,7 +30,7 @@
   width: 850px;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   justify-self: center;
   text-align: center;
   /* fade-in*/
