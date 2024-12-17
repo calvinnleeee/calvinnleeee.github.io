@@ -10,14 +10,9 @@
   font-style: normal;
 }
 
-.my-content {
-  width: 850px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  justify-self: center;
-  align-items: center;
-  text-align: center;
+@keyframes fadeIn {
+  0% { opacity: 0%; }
+  100% { opacity: 100%; }
 }
 
 .cloudy-bg {
@@ -29,6 +24,18 @@
   /* background-blend-mode: multiply; */
   background-size: 100%;
   /* background-blend-mode: overlay; */
+}
+
+.my-content {
+  width: 850px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  text-align: center;
+  /* fade-in*/
+  opacity: 0;
+  animation: fadeIn 0.67s ease-in forwards;
 }
 
 .navbar {
