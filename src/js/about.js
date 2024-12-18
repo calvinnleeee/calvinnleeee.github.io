@@ -11,7 +11,7 @@ function about() {
 
   // spacer
   let spacer = document.createElement("div");
-  spacer.classList.add("h-20");
+  spacer.classList.add("h-16");
 
   // top-level intro
   let name = document.createElement("h2");
@@ -51,7 +51,6 @@ function about() {
   tidbits.innerText = "I also ...";
   fetch("./src/json/tidbits.json").then(res => res.json()).then(data => {
     for (let idx in data) {
-      console.log(data[idx]);
       let list_item = document.createElement("li");
       list_item.classList.add(
         "text-xl", "dark:text-white", "font-normal", "text-left", "ml-14", "my-2", "list-disc"
