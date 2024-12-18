@@ -14,11 +14,11 @@ function portfolio() {
   spacer.classList.add("h-16");
 
   ////////////////////////////////////////////////////////
-  // Programming languages section
+  // programming languages section
   let language_section = document.createElement("div")
   language_section.classList.add("container", "flex", "flex-row", "w-full")
   let language_head = document.createElement("h2");
-  language_head.classList.add("text-4xl", "font-bold", "dark:text-white", "text-left", 'mb-8');
+  language_head.classList.add("text-4xl", "font-bold", "dark:text-white", "text-left", 'mb-5');
   language_head.innerText = "Programming languages";
 
   // subsection1: most recently used
@@ -61,12 +61,24 @@ function portfolio() {
   language_sub2.appendChild(language_list2);
   language_section.appendChild(language_sub2);
 
+  ////////////////////////////////////////////////////////
+  // skills section
+  let skills_section = document.createElement("div")
+  skills_section.classList.add("container", "flex", "flex-row", "w-full")
+  let skills_head = document.createElement("h2");
+  skills_head.classList.add("text-4xl", "font-bold", "dark:text-white", "text-left", 'mb-5');
+  skills_head.innerText = "Skills and experiences";
+
+
+
 
   ////////////////////////////////////////////////////////
   // add content to the div
   portfolio_content.appendChild(spacer);
   portfolio_content.appendChild(language_head);
   portfolio_content.appendChild(language_section);
+  portfolio_content.appendChild(spacer.cloneNode());
+  portfolio_content.appendChild(skills_head);
 
   // add to main div
   document.getElementById("content").appendChild(portfolio_content);
