@@ -5,9 +5,14 @@ Little bit about me: dance game player, student, programmer. I love problem solv
 
 Currently: 
 * BCIT CST diploma student, graduating May 2025. Previous undergrad studies in electrical engineering.
-* (Finally) updating this website and doing something with it
 * Thinking of doing an AWS certificate or a Google certificate (or maybe both?)
-* Looking for a job to use my programming, problem-solving, and/or leadership and team management skills!
+* Leetcoding away! (Not to pass interviews, but to improve my problem-solving skills and habits)
+
+
+
+![](https://leetcard.jacoblin.cool/xcalvinn?theme=dark)
+
+(credit to [JacobLinCool](https://github.com/JacobLinCool/LeetCode-Stats-Card) for this tracker)
 
 
 ## Languages learned (in order of most recently used)
