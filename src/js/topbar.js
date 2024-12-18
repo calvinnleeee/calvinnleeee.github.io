@@ -14,6 +14,7 @@ function topbar() {
   // about
   let about = document.createElement("p");
   about.classList.add("h-fit", "w-max", "text-2xl", "dark:text-white", "cursor-pointer", "basis-1/5");
+  about.id = "about";
   about.innerText = "About";
   about.addEventListener("click", function (e) {
     // navigate to home
@@ -22,6 +23,7 @@ function topbar() {
   // portfolio
   let portfolio = document.createElement("p");
   portfolio.classList.add("h-fit", "w-max", "text-2xl", "dark:text-white", "cursor-pointer", "basis-1/5");
+  portfolio.id = "portfolio";
   portfolio.innerText = "Portfolio";
   portfolio.addEventListener("click", function (e) {
     // navigate to skills/experiences
@@ -30,6 +32,7 @@ function topbar() {
   // contact
   let contact = document.createElement("p");
   contact.classList.add("h-fit", "w-max", "text-2xl", "dark:text-white", "cursor-pointer", "basis-1/5");
+  contact.id = "contact";
   contact.innerText = "Contact";
   contact.addEventListener("click", function (e) {
     // navigate to contact links
