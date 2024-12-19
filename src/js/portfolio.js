@@ -72,7 +72,9 @@ function portfolio() {
   fetch("./src/json/skills.json").then(res => res.json()).then(data => {
     for (let idx in data) {
       let point_div = document.createElement("div");
-      point_div.classList.add("border-b-2", "border-stone-500", "dark:border-sky-50", "my-3");
+      if (idx != data.length - 1) {
+        point_div.classList.add("border-b-2", "border-stone-500", "dark:border-sky-50", "my-3");
+      }
       point_div.classList.add("flex", "flex-row", "w-full", "h-fit");
 
       let point = data[idx]
