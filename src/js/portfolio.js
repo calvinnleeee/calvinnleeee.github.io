@@ -27,6 +27,7 @@ function portfolio() {
   let language_sub1head = document.createElement("h3");
   language_sub1head.classList.add("text-2xl", "font-normal", "dark:text-white", "text-left", "mb-2", "h-16");
   language_sub1head.innerText = "Most recently used:"
+  language_sub1head.classList.add("border-b-2", "border-stone-500", "dark:border-sky-50", "my-3");
 
   let languages1 = ["Python", "Kotlin", "OCaml", "Java", "C"];
   let language_list1 = document.createElement("ul");
@@ -44,6 +45,7 @@ function portfolio() {
   let language_sub2head = document.createElement("h3");
   language_sub2head.classList.add("text-2xl", "font-normal", "dark:text-white", "text-left", "mb-2", "h-16");
   language_sub2head.innerText = "Previously learned (need refreshing):"
+  language_sub2head.classList.add("border-b-2", "border-stone-500", "dark:border-sky-50", "my-3");
 
   let languages2 = ["HTML/CSS", "Javascript", "C++"];
   let language_list2 = document.createElement("ul");

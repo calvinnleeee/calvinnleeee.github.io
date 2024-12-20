@@ -55,6 +55,9 @@ function about() {
       list_item.classList.add(
         "text-xl", "dark:text-white", "font-normal", "text-left", "ml-14", "my-2", "list-disc"
       );
+      if (idx == 0) {
+        list_item.classList.add("mt-6");
+      }
       list_item.innerText = data[idx];
       tidbits.appendChild(list_item);
     }
