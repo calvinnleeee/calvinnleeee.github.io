@@ -108,6 +108,7 @@ function portfolio() {
   portfolio_content.appendChild(spacer.cloneNode());
   portfolio_content.appendChild(skills_head);
   portfolio_content.appendChild(skills_section);
+  portfolio_content.appendChild(spacer.cloneNode());
 
   // add to main div
   document.getElementById("content").appendChild(portfolio_content);

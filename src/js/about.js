@@ -70,6 +70,7 @@ function about() {
   about_content.appendChild(intro);
   about_content.appendChild(spacer.cloneNode());
   about_content.appendChild(tidbits);
+  about_content.appendChild(spacer.cloneNode());
 
   // add to main div
   document.getElementById("content").appendChild(about_content);
