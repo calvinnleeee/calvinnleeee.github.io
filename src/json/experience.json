@@ -1,0 +1,21 @@
+[
+  {
+    "main": "Mobile/Web Full-stack Developer",
+    "secondary": "IOTO International Inc.",
+    "desc": [
+      "Utilized frameworks such as React, React Native, Next.js, and Expo to develop mobile/web applications, integrating with a Node.js backend and Neo4j graph database to serve data to users",
+      "Worked as self-directed, solo developer to design, build, and release a test build of an Android application on the Google Play Store within 6 months to advance the business's goals",
+      "Designed all user-facing screens and supporting backend API endpoints of both mobile and web applications, with attention to user experience and data security and privacy",
+      "Performed optimizations and refactoring of outdated backend code, improving query and API response times by up to 50% and increasing maintainability and readability"
+    ]
+  },
+  {
+    "main": "Team Leader",
+    "secondary": "Market Ribbon (formerly Assi Market)",
+    "desc": [
+      "Paired with self studies, learned a third language (Korean) to comfortably integrate and work within the business and culture",
+      "Conducted daily meetings, product orders, and decision-making of sales and promotions to maintain productivity and ensure performance targets for the store were met",
+      "Hired and trained new employees, helping them adapt to the environment, learn how to identify important tasks, and work efficiently"
+    ]
+  }
+]
