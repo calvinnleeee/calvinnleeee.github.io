@@ -11,17 +11,17 @@ function about() {
 
   // spacer
   let spacer = document.createElement("div");
-  spacer.classList.add("h-16");
+  spacer.classList.add("h-12");
 
   // top-level intro
   let name = document.createElement("h2");
   name.classList.add("text-4xl", "font-bold", "dark:text-white", "text-left", 'mb-6');
-  name.innerText = "Hi, I'm Calvin :) I am 👇";
+  name.innerText = "Hi, I'm Calvin :) I am... 👇";
 
   ////////////////////////////////////////////////////////
   // intro list
   let intro = document.createElement("ul");
-  intro.classList.add("list-none", "ml-16");
+  intro.classList.add("list-none", "ml-8");
 
   fetch("./src/json/intro.json").then(res => res.json()).then(data => {
     for (let idx in data) {
@@ -31,9 +31,9 @@ function about() {
       list_item.innerText = point["main"];
   
       let list_desc = document.createElement("ul");
-      list_desc.classList.add("text-xl", "dark:text-white", "text-left", "ml-12", "my-2");
+      list_desc.classList.add("text-xl", "dark:text-white", "text-left", "ml-8", "my-2");
       for (let idx in point["desc"]) {
-        let dsc = point["desc"][idx]
+        let dsc = `- ` + point["desc"][idx]
         let item = document.createElement("li");
         item.classList.add("mb-2");
         item.innerText = dsc;
@@ -47,18 +47,18 @@ function about() {
   ////////////////////////////////////////////////////////
   // additional tidbits
   let tidbits = document.createElement("ul");
-  tidbits.classList.add("text-4xl", "font-bold", "dark:text-white", "text-left");
+  tidbits.classList.add("text-4xl", "font-bold", "dark:text-white", "text-left", "list-none");
   tidbits.innerText = "I also ...";
   fetch("./src/json/tidbits.json").then(res => res.json()).then(data => {
     for (let idx in data) {
       let list_item = document.createElement("li");
       list_item.classList.add(
-        "text-xl", "dark:text-white", "font-normal", "text-left", "ml-14", "my-2", "list-disc"
+        "text-xl", "dark:text-white", "font-normal", "text-left", "ml-14", "my-2", "list-none"
       );
       if (idx == 0) {
         list_item.classList.add("mt-6");
       }
-      list_item.innerText = data[idx];
+      list_item.innerText = `- ` + data[idx];
       tidbits.appendChild(list_item);
     }
   });
