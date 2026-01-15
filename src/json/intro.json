@@ -1,23 +1,24 @@
 [
   {
-    "main": "... a problem solver:",
+    "main": "a problem solver",
     "desc": [
-      "Programming, playing games, managing relationships; everything can be turned into a problem and solved :)",
-      "I love creating solutions, iterating, and improving."
+      "Programming, playing games, managing relationships; I think everything can be turned into a problem and solved",
+      "I love the process of breaking down problems, analyzing the pieces, and finding the answers to each piece of a solution"
     ]
   },
   {
-    "main": "... a thinker:",
+    "main": "a thinker",
     "desc": [
-      "Do something and reflect on it. Always consider what can be done differently!",
-      "Discuss, brainstorm, debate. I want my ideas to be challenged so they can be improved on."
+      "I reflect on everything I do, and always consider what can be done differently",
+      "I want to understand how and why things work; I'm not happy with something 'just working'"
     ]
   },
   {
-    "main": "... a leader:",
+    "main": "a leader",
     "desc": [
-      "I maintain strong relationships with those I work with, whether they are teammates, managers, or clients.",
-      "I organize resources and people so that everyone can work at their best."
+      "I maintain strong relationships with those I work with, whether they are teammates, managers, or clients",
+      "I communicate as much as I can so everyone, including me, has all the details needed for their work and decisions",
+      "I'm proactive; I find things to do instead of waiting around for work"
     ]
   }
 ]
